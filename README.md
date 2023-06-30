@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://todo-app-one-topaz.vercel.app">
       Demo
     </a>
     <span> | </span>
@@ -31,7 +31,7 @@
 
 ## Overview
 
-![screenshot-all](https://github.com/GustavoPendeza/GustavoPendeza/assets/53589614/6afa4f25-f882-4c07-abdb-e7a4e8457a03)
+![screenshot-all](https://github.com/GustavoPendeza/todo-app/assets/53589614/aa5c2720-3893-4af6-9961-dec318eeda55)
 ![screenshot-active](https://github.com/GustavoPendeza/GustavoPendeza/assets/53589614/0d078ae8-14ec-47e1-a4b0-b3809a90b614)
 ![screenshot-completed](https://github.com/GustavoPendeza/GustavoPendeza/assets/53589614/cde41414-15a4-4fb3-92e6-fd99f6ae885f)
 
