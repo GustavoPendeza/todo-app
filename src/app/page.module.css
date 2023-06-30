@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* ------------ MAIN ------------ */
+
+.main {
+  margin: 4rem 0;
+}
+
+/* ------------ MENU ------------ */
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuOption span {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.underline {
+  width: 89px;
+  height: 4px;
+  border-radius: 4px 4px 0px 0px;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.menuOption:hover > .underline {
+  background: #2f80ed;
+}
+
+.underlineActive {
+  width: 89px;
+  height: 4px;
+  border-radius: 4px 4px 0px 0px;
+  background: #2f80ed;
+}
+
+.hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #bdbdbd;
+}
+
+/* ------------ INPUT ------------ */
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  font-size: 14px;
+}
+
+.input {
+  color: #000;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #bdbdbd;
+  width: 80%;
+  padding: 1rem;
+}
+
+.input::placeholder {
+  color: #828282;
+  font-size: 14px;
+}
+
+.addButton {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px 0px rgba(127, 177, 243, 0.4);
+  width: 15%;
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addButton:hover:enabled {
+  opacity: 0.7;
+}
+
+.addButton:disabled {
+  background: #2f80ed90;
+  cursor: not-allowed;
+}
+
+/* ------------ TODO ------------ */
+
+.todoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #828282;
+  transition: 0.2s;
+}
+
+.checkbox:checked {
+  position: relative;
+  background: #2f80ed;
+}
+
+.checkbox::before {
+  content: "✔";
+  font-size: 1.5em;
+  color: #fff;
+  position: absolute;
+  left: 3px;
+  top: -4px;
+}
+
+.label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.checkbox:checked + .label {
+  color: #333;
+  text-decoration: line-through;
+}
+
+.deleteIcon {
+  color: #bdbdbd;
+  font-size: 20px;
+  margin: 0 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
+
+/* ------------ DELETE ------------ */
+
+.deleteContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0;
+}
+
+.deleteButton {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 4px;
+  background: #eb5757;
+  padding: 0.8rem 1.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 685px) {
+  /* ------------ INPUT ------------ */
+
+  .inputContainer {
+    margin: 1.5rem 0.5rem;
+  }
+
+  /* ------------ TODO ------------ */
+
+  .todoContainer {
+    margin: 1rem 0.5rem;
+  }
+}
